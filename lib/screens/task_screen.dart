@@ -30,6 +30,13 @@ class TaskScreen extends StatelessWidget {
               fontWeight: FontWeight.w500,
               fontSize: 29.0,
             ),),
+            Container(
+              height: 300.0,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), topRight: Radius.circular(30.0)),
+              ),
+            ),
           ],
         ),
       ),
