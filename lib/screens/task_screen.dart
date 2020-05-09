@@ -44,12 +44,28 @@ class TaskScreen extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), topRight: Radius.circular(30.0)),
               ),
+              child: ListView(
+                children: <Widget>[
+                  ListTile(
+                    title: Text('this is a task'),
+                    trailing: Checkbox(value: false,),
+
+                  )
+                ],
+              ),
             ),
           ),
 
 
 
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.lightBlueAccent,
+        child: Icon(
+          Icons.add,
+
+        ),
       ),
     );
   }
