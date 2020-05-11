@@ -2,10 +2,26 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:app/widgets/tasks_list.dart';
 
+
+
+
 class TaskScreen extends StatelessWidget {
+  Widget buildBottomSheet(BuildContext context){
+    return Container();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          showModalBottomSheet(context: context, builder: )
+        },
+        backgroundColor: Colors.lightBlueAccent,
+        child: Icon(
+          Icons.add,
+
+        ),
+      ),
       backgroundColor: Colors.lightBlueAccent,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,13 +70,7 @@ class TaskScreen extends StatelessWidget {
 
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.lightBlueAccent,
-        child: Icon(
-          Icons.add,
 
-        ),
-      ),
     );
   }
 }
