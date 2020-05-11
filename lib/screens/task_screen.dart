@@ -1,20 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:app/widgets/tasks_list.dart';
+import 'package:app/screens/add_task_screen.dart';
 
 
 
 
 class TaskScreen extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context){
-    return Container();
-  }
+  Widget buildBottomSheet(BuildContext context)=>Container();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          showModalBottomSheet(context: context, builder: )
+          showModalBottomSheet(context: context,builder: (context) => AddTaskScreen());
         },
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(
